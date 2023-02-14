@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -name "*" -exec awk 'FNR==1{printf substr($0,1,1)}' {} \; | tr -d '\n' && echo
+echo $ (cut -cl | tr -d " \n")
